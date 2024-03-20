@@ -23,7 +23,7 @@ URL: https://github.com/dracutdevs/dracut/wiki/
 # Currently upstream does not create releases, therefore
 # source is created from commit 856e7acdb1462803c2517c8d64afb2e34c73c735
 # Reference PR: https://github.com/dracutdevs/dracut/pull/2509
-Source0: %{version}.tar.xz
+Source0: dracut-%{version}.tar.xz
 #Source0: https://github.com/dracutdevs/dracut/archive/refs/tags/%{version}.tar.gz
 
 Source1: https://www.gnu.org/licenses/lgpl-2.1.txt
