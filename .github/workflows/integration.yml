@@ -32,19 +32,11 @@ jobs:
             fail-fast: false
             matrix:
                 container:
-                    - alpine:edge
-                    - alpine:busybox-edge
-                    - arch:latest
-                    - debian:latest
                     - fedora:latest
-                    - gentoo:latest
-                    - opensuse:latest
-                    - ubuntu:devel
-                    - void:latest
                 test:
                     - "10"
         container:
-            image: ghcr.io/dracut-ng/${{ matrix.container }}
+            image: ghcr.io/${{ github.repository_owner }}/${{ matrix.container }}
             options: '--device=/dev/kvm'
         steps:
             - name: "Checkout Repository"
@@ -56,7 +48,7 @@ jobs:
     syncheck:
         needs: basic
         name: syncheck
-        runs-on: ubuntu-24.04
+        runs-on: ubuntu-latest
         container:
             image: ubuntu:devel
         steps:
@@ -80,12 +72,7 @@ jobs:
             fail-fast: false
             matrix:
                 container:
-                    - arch:latest
                     - fedora:latest
-                    - gentoo:latest
-                    - opensuse:latest
-                    - ubuntu:devel
-                    - void:latest
                 test:
                     - "11"
                     - "12"
@@ -99,7 +86,7 @@ jobs:
                     - "80"
                     - "81"
         container:
-            image: ghcr.io/dracut-ng/${{ matrix.container }}
+            image: ghcr.io/${{ github.repository_owner }}/${{ matrix.container }}
             options: '--device=/dev/kvm'
         steps:
             - name: "Checkout Repository"
@@ -121,11 +108,7 @@ jobs:
             fail-fast: false
             matrix:
                 container:
-                    - arch:latest
                     - fedora:latest
-                    - gentoo:latest
-                    - opensuse:latest
-                    - ubuntu:devel
                 test:
                     - "40"
                     - "41"
@@ -135,7 +118,7 @@ jobs:
                     - "45"
                     - "46"
         container:
-            image: ghcr.io/dracut-ng/${{ matrix.container }}
+            image: ghcr.io/${{ github.repository_owner }}/${{ matrix.container }}
             options: '--device=/dev/kvm --privileged'
         steps:
             - name: "Checkout Repository"
@@ -157,17 +140,18 @@ jobs:
             fail-fast: false
             matrix:
                 container:
-                    - opensuse:latest
+                    - fedora:latest
                 test:
                     - "82"
         container:
-            image: ghcr.io/dracut-ng/${{ matrix.container }}
+            image: ghcr.io/${{ github.repository_owner }}/${{ matrix.container }}
             options: '--device=/dev/kvm'
         steps:
             - name: "Checkout Repository"
               uses: actions/checkout@v6
             - name: "${{ matrix.container }} TEST-${{ matrix.test }}"
               run: ./test/test-container.sh "TEST-${{ matrix.test }}" ${{ matrix.test }}
+
     network:
         needs: basic
         # all nfs based on default networking
@@ -183,15 +167,12 @@ jobs:
             fail-fast: false
             matrix:
                 container:
-                    - arch:latest
                     - fedora:latest
-                    - opensuse:latest
-                    - ubuntu:devel
                 test:
                     - "31"
                     - "60"
         container:
-            image: ghcr.io/dracut-ng/${{ matrix.container }}
+            image: ghcr.io/${{ github.repository_owner }}/${{ matrix.container }}
             options: '--device=/dev/kvm'
         steps:
             - name: "Checkout Repository"
@@ -216,8 +197,7 @@ jobs:
                 network:
                     - network-manager
                 container:
-                    - debian:latest
-                    - ubuntu:devel
+                    - fedora:rawhide
                 test:
                     - "70"
                     - "71"
@@ -245,12 +225,11 @@ jobs:
             fail-fast: false
             matrix:
                 container:
-                    - debian:latest
-                    - opensuse:latest
+                    - fedora:rawhide
                 test:
                     - "72"
         container:
-            image: ghcr.io/dracut-ng/${{ matrix.container }}
+            image: ghcr.io/${{ github.repository_owner }}/${{ matrix.container }}
             options: '--device=/dev/kvm'
         steps:
             - name: "Checkout Repository"
@@ -273,14 +252,11 @@ jobs:
             fail-fast: false
             matrix:
                 container:
-                    - debian:latest
-                    - opensuse:latest
-                    - ubuntu:rolling
-                    - void:latest
+                    - fedora:latest
                 test:
                     - "10"
         container:
-            image: ghcr.io/dracut-ng/${{ matrix.container }}
+            image: ghcr.io/${{ github.repository_owner }}/${{ matrix.container }}-arm
             options: '--device=/dev/kvm --privileged'
         steps:
             - name: "Checkout Repository"
