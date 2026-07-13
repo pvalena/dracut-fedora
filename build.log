@@ -1,0 +1,349 @@
++ mock --bootstrap-chroot --isolation=nspawn -r fedora-rawhide-x86_64 -n --result=./result dracut-109-5.20260713.fc45.src.rpm
+INFO: mock.py version 6.7 starting (python version = 3.14.5, NVR = mock-6.7-1.fc45), args: /usr/libexec/mock/mock --bootstrap-chroot --isolation=nspawn -r fedora-rawhide-x86_64 -n --result=./result dracut-109-5.20260713.fc45.src.rpm
+Start(bootstrap): init plugins
+INFO: selinux disabled
+Finish(bootstrap): init plugins
+Start: init plugins
+INFO: selinux disabled
+Finish: init plugins
+INFO: Signal handler active
+Start: run
+INFO: Start(dracut-109-5.20260713.fc45.src.rpm)  Config(fedora-rawhide-x86_64)
+Mock Version: 6.7
+INFO: Mock Version: 6.7
+Start(bootstrap): chroot init
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start(bootstrap): cleaning package manager metadata
+Finish(bootstrap): cleaning package manager metadata
+INFO: Package manager dnf5 detected and used (fallback)
+Finish(bootstrap): chroot init
+Start: chroot init
+INFO: calling preinit hooks
+INFO: enabled root cache
+INFO: enabled package manager cache
+Start: cleaning package manager metadata
+Finish: cleaning package manager metadata
+INFO: enabled HW Info plugin
+INFO: Package manager dnf5 detected and used (direct choice)
+INFO: Buildroot is handled by package management downloaded with a bootstrap image:
+  Note: in a future version of systemd-nspawn the default set of permitted socket address families will be restricted to AF_INET, AF_INET6 and AF_UNIX. Use --restrict-address-families= to configure the set of permitted socket address families, or set RestrictAddressFamilies= in a .nspawn file.
+  rpm-6.0.1-2.fc44.x86_64
+  rpm-sequoia-1.10.0-2.fc44.x86_64
+  dnf5-5.3.0.0-7.fc44.x86_64
+  dnf5-plugins-5.3.0.0-7.fc44.x86_64
+Finish: chroot init
+Start: build phase for dracut-109-5.20260713.fc45.src.rpm
+Start: build setup for dracut-109-5.20260713.fc45.src.rpm
+Note: in a future version of systemd-nspawn the default set of permitted socket address families will be restricted to AF_INET, AF_INET6 and AF_UNIX. Use --restrict-address-families= to configure the set of permitted socket address families, or set RestrictAddressFamilies= in a .nspawn file.
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1781654400
+Wrote: /builddir/build/SRPMS/dracut-109-5.20260713.fc45.src.rpm
+Note: in a future version of systemd-nspawn the default set of permitted socket address families will be restricted to AF_INET, AF_INET6 and AF_UNIX. Use --restrict-address-families= to configure the set of permitted socket address families, or set RestrictAddressFamilies= in a .nspawn file.
+Updating and loading repositories:
+ fedora                                 100% |  17.3 KiB/s |  11.5 KiB |  00m01s
+Repositories loaded.
+Package "bash-5.3.15-1.fc45.x86_64" is already installed.
+Package "pkgconf-pkg-config-2.5.1-1.fc45.x86_64" is already installed.
+
+Package              Arch   Version                   Repository      Size
+Installing:
+ bash-completion     noarch 1:2.17-2.fc44             fedora       1.4 MiB
+ cargo               x86_64 0:1.97.0-1.fc45           fedora      23.7 MiB
+ docbook-dtds        noarch 0:1.0-91.fc44             fedora       6.7 MiB
+ docbook-style-xsl   noarch 0:1.79.2-27.fc44          fedora      14.6 MiB
+ gcc                 x86_64 0:16.1.1-4.fc45           fedora     121.8 MiB
+ git-core            x86_64 0:2.55.0-1.fc45           fedora      25.5 MiB
+ kmod-devel          x86_64 0:34.2-5.fc45             fedora      44.7 KiB
+ libxslt             x86_64 0:1.1.43-7.fc45           fedora     471.8 KiB
+ openssl-devel       x86_64 1:4.0.1-3.fc45            fedora       4.6 MiB
+ rubygem-asciidoctor noarch 0:2.0.26-2.fc44           fedora       1.0 MiB
+ systemd             x86_64 0:261.1-2.fc45            fedora      14.3 MiB
+Installing dependencies:
+ annobin-docs        noarch 0:13.24-1.fc45            fedora      99.7 KiB
+ annobin-plugin-gcc  x86_64 0:13.24-1.fc45            fedora     708.9 KiB
+ authselect          x86_64 0:1.7.1-1.fc44            fedora     202.0 KiB
+ authselect-libs     x86_64 0:1.7.1-1.fc44            fedora     889.7 KiB
+ cpp                 x86_64 0:16.1.1-4.fc45           fedora      42.5 MiB
+ cracklib            x86_64 0:2.10.3-1.fc45           fedora     234.6 KiB
+ expat               x86_64 0:2.8.1-1.fc45            fedora     327.4 KiB
+ gcc-plugin-annobin  x86_64 0:16.1.1-4.fc45           fedora      57.0 KiB
+ gdbm                x86_64 1:1.23-11.fc44            fedora     459.8 KiB
+ glibc-devel         x86_64 0:2.43.9000-22.fc45       fedora       2.3 MiB
+ kernel-headers      x86_64 0:7.2.0-0.rc2.21.fc45     fedora       7.0 MiB
+ kmod-libs           x86_64 0:34.2-5.fc45             fedora     143.1 KiB
+ less                x86_64 0:704-2.fc45              fedora     483.5 KiB
+ libatomic           x86_64 0:16.1.1-4.fc45           fedora      45.6 KiB
+ libedit             x86_64 0:3.1-59.20260512cvs.fc45 fedora     248.3 KiB
+ libgit2_1.9         x86_64 0:1.9.4-2.fc45            fedora       1.4 MiB
+ libmpc              x86_64 0:1.4.1-1.fc45            fedora     168.7 KiB
+ libnsl2             x86_64 0:2.0.1-5.fc44            fedora      57.7 KiB
+ libpwquality        x86_64 0:1.4.5-16.fc45           fedora     412.7 KiB
+ libseccomp          x86_64 0:2.6.0-3.fc44            fedora     224.8 KiB
+ libssh2             x86_64 0:1.11.1-9.fc45           fedora     334.6 KiB
+ libtirpc            x86_64 0:1.3.7-2.fc44            fedora     204.3 KiB
+ libxcrypt-devel     x86_64 0:4.5.2-3.fc44            fedora      31.0 KiB
+ libyaml             x86_64 0:0.2.5-18.fc44           fedora     138.5 KiB
+ llhttp              x86_64 0:9.4.2-1.fc45            fedora      97.2 KiB
+ llvm-filesystem     x86_64 0:22.1.8-10.fc45          fedora       0.0   B
+ llvm-libs           x86_64 0:22.1.8-10.fc45          fedora     140.5 MiB
+ make                x86_64 1:4.4.1-12.fc44           fedora       1.8 MiB
+ openssh             x86_64 0:10.4p1-2.fc45           fedora       1.6 MiB
+ openssh-clients     x86_64 0:10.4p1-2.fc45           fedora       2.6 MiB
+ pam                 x86_64 0:1.7.2-3.fc45            fedora       1.6 MiB
+ ruby                x86_64 0:4.0.5-35.fc45           fedora      97.9 KiB
+ ruby-bundled-gems   x86_64 0:4.0.5-35.fc45           fedora       2.6 MiB
+ ruby-default-gems   noarch 0:4.0.5-35.fc45           fedora      64.3 KiB
+ ruby-libs           x86_64 0:4.0.5-35.fc45           fedora      15.4 MiB
+ rubygem-io-console  x86_64 0:0.8.2-35.fc45           fedora      33.3 KiB
+ rubygem-irb         noarch 0:1.16.0-35.fc45          fedora     342.3 KiB
+ rubygem-json        x86_64 0:2.20.0-1.fc45           fedora     266.7 KiB
+ rubygem-psych       x86_64 0:5.3.1-35.fc45           fedora     142.9 KiB
+ rubygem-rbs         x86_64 0:3.10.0-35.fc45          fedora       5.8 MiB
+ rubygem-rdoc        noarch 0:7.0.4-35.fc45           fedora       2.2 MiB
+ rubygems            noarch 0:4.0.16-1.fc45           fedora       1.8 MiB
+ rubypick            noarch 0:1.1.1-24.fc44           fedora       4.4 KiB
+ rust                x86_64 0:1.97.0-1.fc45           fedora      94.7 MiB
+ rust-std-static     x86_64 0:1.97.0-1.fc45           fedora     165.3 MiB
+ sgml-common         noarch 0:0.6.3-68.fc44           fedora     168.1 KiB
+ systemd-rpm-macros  noarch 0:261.1-2.fc45            fedora       8.5 KiB
+ systemd-shared      x86_64 0:261.1-2.fc45            fedora       6.0 MiB
+ xml-common          noarch 0:0.6.3-68.fc44           fedora      78.4 KiB
+
+Transaction Summary:
+ Installing:        60 packages
+
+Total size of inbound packages is 204 MiB. Need to download 204 MiB.
+After this operation, 716 MiB extra will be used (install 716 MiB, remove 0 B).
+[ 1/60] rubygem-asciidoctor-0:2.0.26-2. 100% |   1.6 MiB/s | 267.4 KiB |  00m00s
+[ 2/60] bash-completion-1:2.17-2.fc44.n 100% |   2.3 MiB/s | 484.0 KiB |  00m00s
+[ 3/60] docbook-dtds-0:1.0-91.fc44.noar 100% |   4.3 MiB/s | 333.7 KiB |  00m00s
+[ 4/60] docbook-style-xsl-0:1.79.2-27.f 100% |   7.2 MiB/s |   1.5 MiB |  00m00s
+[ 5/60] cargo-0:1.97.0-1.fc45.x86_64    100% |   8.0 MiB/s |   7.9 MiB |  00m01s
+[ 6/60] git-core-0:2.55.0-1.fc45.x86_64 100% |   8.5 MiB/s |   5.5 MiB |  00m01s
+[ 7/60] libxslt-0:1.1.43-7.fc45.x86_64  100% |   2.0 MiB/s | 192.4 KiB |  00m00s
+[ 8/60] kmod-devel-0:34.2-5.fc45.x86_64 100% | 435.6 KiB/s |  17.4 KiB |  00m00s
+[ 9/60] ruby-bundled-gems-0:4.0.5-35.fc 100% |   4.6 MiB/s | 720.5 KiB |  00m00s
+[10/60] rubygems-0:4.0.16-1.fc45.noarch 100% |   4.5 MiB/s | 470.4 KiB |  00m00s
+[11/60] rubypick-0:1.1.1-24.fc44.noarch 100% | 285.4 KiB/s |  10.0 KiB |  00m00s
+[12/60] libgit2_1.9-0:1.9.4-2.fc45.x86_ 100% |   4.9 MiB/s | 610.0 KiB |  00m00s
+[13/60] libssh2-0:1.11.1-9.fc45.x86_64  100% |   2.5 MiB/s | 148.9 KiB |  00m00s
+[14/60] systemd-0:261.1-2.fc45.x86_64   100% |   8.0 MiB/s |   4.6 MiB |  00m01s
+[15/60] sgml-common-0:0.6.3-68.fc44.noa 100% |   1.0 MiB/s |  60.5 KiB |  00m00s
+[16/60] xml-common-0:0.6.3-68.fc44.noar 100% | 943.4 KiB/s |  31.1 KiB |  00m00s
+[17/60] cpp-0:16.1.1-4.fc45.x86_64      100% |   7.8 MiB/s |  14.6 MiB |  00m02s
+[18/60] libmpc-0:1.4.1-1.fc45.x86_64    100% |   2.0 MiB/s |  75.6 KiB |  00m00s
+[19/60] make-1:4.4.1-12.fc44.x86_64     100% |   5.2 MiB/s | 588.7 KiB |  00m00s
+[20/60] expat-0:2.8.1-1.fc45.x86_64     100% |   3.1 MiB/s | 129.9 KiB |  00m00s
+[21/60] less-0:704-2.fc45.x86_64        100% |   4.0 MiB/s | 228.0 KiB |  00m00s
+[22/60] openssh-clients-0:10.4p1-2.fc45 100% |   5.9 MiB/s | 824.2 KiB |  00m00s
+[23/60] kmod-libs-0:34.2-5.fc45.x86_64  100% |   2.0 MiB/s |  70.0 KiB |  00m00s
+[24/60] libseccomp-0:2.6.0-3.fc44.x86_6 100% |   1.9 MiB/s |  77.1 KiB |  00m00s
+[25/60] systemd-shared-0:261.1-2.fc45.x 100% |   7.5 MiB/s |   2.2 MiB |  00m00s
+[26/60] ruby-default-gems-0:4.0.5-35.fc 100% |   1.1 MiB/s |  38.7 KiB |  00m00s
+[27/60] gcc-0:16.1.1-4.fc45.x86_64      100% |   9.3 MiB/s |  43.2 MiB |  00m05s
+[28/60] rubygem-io-console-0:0.8.2-35.f 100% | 792.8 KiB/s |  24.6 KiB |  00m00s
+[29/60] rubygem-irb-0:1.16.0-35.fc45.no 100% |   2.7 MiB/s | 119.6 KiB |  00m00s
+[30/60] rust-0:1.97.0-1.fc45.x86_64     100% |   8.5 MiB/s |  30.7 MiB |  00m04s
+[31/60] ruby-libs-0:4.0.5-35.fc45.x86_6 100% |   5.4 MiB/s |   4.4 MiB |  00m01s
+[32/60] rubygem-psych-0:5.3.1-35.fc45.x 100% | 842.2 KiB/s |  59.0 KiB |  00m00s
+[33/60] rubygem-rbs-0:3.10.0-35.fc45.x8 100% |   2.7 MiB/s |   1.1 MiB |  00m00s
+[34/60] llhttp-0:9.4.2-1.fc45.x86_64    100% | 456.8 KiB/s |  38.4 KiB |  00m00s
+[35/60] libedit-0:3.1-59.20260512cvs.fc 100% |   2.5 MiB/s | 110.5 KiB |  00m00s
+[36/60] openssh-0:10.4p1-2.fc45.x86_64  100% |   2.7 MiB/s | 371.6 KiB |  00m00s
+[37/60] libyaml-0:0.2.5-18.fc44.x86_64  100% |   1.2 MiB/s |  63.0 KiB |  00m00s
+[38/60] llvm-filesystem-0:22.1.8-10.fc4 100% | 253.0 KiB/s |  11.1 KiB |  00m00s
+[39/60] glibc-devel-0:2.43.9000-22.fc45 100% |   5.4 MiB/s | 647.6 KiB |  00m00s
+[40/60] libxcrypt-devel-0:4.5.2-3.fc44. 100% | 769.8 KiB/s |  30.0 KiB |  00m00s
+[41/60] openssl-devel-1:4.0.1-3.fc45.x8 100% |   7.1 MiB/s |   3.1 MiB |  00m00s
+[42/60] ruby-0:4.0.5-35.fc45.x86_64     100% |   1.2 MiB/s |  42.7 KiB |  00m00s
+[43/60] rubygem-rdoc-0:7.0.4-35.fc45.no 100% |   6.3 MiB/s | 572.0 KiB |  00m00s
+[44/60] rubygem-json-0:2.20.0-1.fc45.x8 100% |   2.9 MiB/s | 111.6 KiB |  00m00s
+[45/60] kernel-headers-0:7.2.0-0.rc2.21 100% |   7.2 MiB/s |   1.8 MiB |  00m00s
+[46/60] libatomic-0:16.1.1-4.fc45.x86_6 100% |   1.4 MiB/s |  52.3 KiB |  00m00s
+[47/60] annobin-plugin-gcc-0:13.24-1.fc 100% |   5.8 MiB/s | 694.7 KiB |  00m00s
+[48/60] gcc-plugin-annobin-0:16.1.1-4.f 100% |   1.7 MiB/s |  56.0 KiB |  00m00s
+[49/60] annobin-docs-0:13.24-1.fc45.noa 100% |   2.0 MiB/s |  87.3 KiB |  00m00s
+[50/60] systemd-rpm-macros-0:261.1-2.fc 100% | 676.8 KiB/s |  19.0 KiB |  00m00s
+[51/60] authselect-libs-0:1.7.1-1.fc44. 100% |   4.0 MiB/s | 237.5 KiB |  00m00s
+[52/60] pam-0:1.7.2-3.fc45.x86_64       100% |   5.9 MiB/s | 559.7 KiB |  00m00s
+[53/60] authselect-0:1.7.1-1.fc44.x86_6 100% |   3.8 MiB/s | 196.2 KiB |  00m00s
+[54/60] libnsl2-0:2.0.1-5.fc44.x86_64   100% | 907.9 KiB/s |  30.0 KiB |  00m00s
+[55/60] libpwquality-0:1.4.5-16.fc45.x8 100% |   3.0 MiB/s | 118.3 KiB |  00m00s
+[56/60] libtirpc-0:1.3.7-2.fc44.x86_64  100% |   2.3 MiB/s |  99.3 KiB |  00m00s
+[57/60] cracklib-0:2.10.3-1.fc45.x86_64 100% |   2.4 MiB/s |  96.4 KiB |  00m00s
+[58/60] gdbm-1:1.23-11.fc44.x86_64      100% |   3.1 MiB/s | 153.1 KiB |  00m00s
+[59/60] llvm-libs-0:22.1.8-10.fc45.x86_ 100% |  10.6 MiB/s |  34.1 MiB |  00m03s
+[60/60] rust-std-static-0:1.97.0-1.fc45 100% |  11.0 MiB/s |  39.4 MiB |  00m04s
+--------------------------------------------------------------------------------
+[60/60] Total                           100% |  22.7 MiB/s | 203.8 MiB |  00m09s
+Running transaction
+[ 1/62] Verify package files            100% |  13.0   B/s |  60.0   B |  00m04s
+[ 2/62] Prepare transaction             100% |  60.0   B/s |  60.0   B |  00m01s
+[ 3/62] Installing ruby-libs-0:4.0.5-35 100% |  26.8 MiB/s |  15.5 MiB |  00m01s
+[ 4/62] Installing libtirpc-0:1.3.7-2.f 100% |   8.1 MiB/s | 206.4 KiB |  00m00s
+[ 5/62] Installing libedit-0:3.1-59.202 100% |  10.6 MiB/s | 250.0 KiB |  00m00s
+[ 6/62] Installing libmpc-0:1.4.1-1.fc4 100% |   3.3 MiB/s | 170.4 KiB |  00m00s
+[ 7/62] Installing xml-common-0:0.6.3-6 100% |   3.4 MiB/s |  81.1 KiB |  00m00s
+[ 8/62] Installing libssh2-0:1.11.1-9.f 100% |  11.7 MiB/s | 336.3 KiB |  00m00s
+[ 9/62] Installing cpp-0:16.1.1-4.fc45. 100% |  38.3 MiB/s |  42.6 MiB |  00m01s
+[10/62] Installing libnsl2-0:2.0.1-5.fc 100% |   3.4 MiB/s |  58.8 KiB |  00m00s
+[11/62] Installing ruby-0:4.0.5-35.fc45 100% | 716.0 KiB/s |  99.5 KiB |  00m00s
+[12/62] Installing rubypick-0:1.1.1-24. 100% |  36.6 KiB/s |   5.1 KiB |  00m00s
+[13/62] Installing gdbm-1:1.23-11.fc44. 100% |   2.6 MiB/s | 464.7 KiB |  00m00s
+[14/62] Installing cracklib-0:2.10.3-1. 100% |   1.2 MiB/s | 246.7 KiB |  00m00s
+[15/62] Installing libpwquality-0:1.4.5 100% |   2.0 MiB/s | 425.1 KiB |  00m00s
+[16/62] Installing authselect-libs-0:1. 100% |   7.1 MiB/s | 906.2 KiB |  00m00s
+[17/62] Installing annobin-docs-0:13.24 100% |   5.5 MiB/s | 100.8 KiB |  00m00s
+[18/62] Installing libatomic-0:16.1.1-4 100% |   1.8 MiB/s |  46.5 KiB |  00m00s
+[19/62] Installing kernel-headers-0:7.2 100% |  11.0 MiB/s |   7.1 MiB |  00m01s
+[20/62] Installing glibc-devel-0:2.43.9 100% |   8.4 MiB/s |   2.4 MiB |  00m00s
+[21/62] Installing libxcrypt-devel-0:4. 100% |   1.8 MiB/s |  33.3 KiB |  00m00s
+[22/62] Installing llvm-filesystem-0:22 100% |  88.5 KiB/s |   1.1 KiB |  00m00s
+[23/62] Installing llvm-libs-0:22.1.8-1 100% |  53.7 MiB/s | 140.5 MiB |  00m03s
+[24/62] Installing libyaml-0:0.2.5-18.f 100% |   6.2 MiB/s | 139.9 KiB |  00m00s
+[25/62] Installing rubygems-0:4.0.16-1. 100% |   6.0 MiB/s |   1.8 MiB |  00m00s
+[26/62] Installing ruby-default-gems-0: 100% | 419.0 KiB/s |  72.9 KiB |  00m00s
+[27/62] Installing rubygem-psych-0:5.3. 100% |   3.0 MiB/s | 151.8 KiB |  00m00s
+[28/62] Installing rubygem-io-console-0 100% |   1.5 MiB/s |  35.7 KiB |  00m00s
+[29/62] Installing rubygem-json-0:2.20. 100% |   5.1 MiB/s | 274.2 KiB |  00m00s
+[30/62] Installing rubygem-rdoc-0:7.0.4 100% |   6.9 MiB/s |   2.2 MiB |  00m00s
+[31/62] Installing ruby-bundled-gems-0: 100% |   6.6 MiB/s |   2.7 MiB |  00m00s
+[32/62] Installing rubygem-irb-0:1.16.0 100% |   1.8 MiB/s | 359.3 KiB |  00m00s
+[33/62] Installing rubygem-rbs-0:3.10.0 100% |  10.5 MiB/s |   5.9 MiB |  00m01s
+[34/62] Installing openssh-0:10.4p1-2.f 100% |   9.0 MiB/s |   1.6 MiB |  00m00s
+[35/62] Installing openssh-clients-0:10 100% |  10.8 MiB/s |   2.6 MiB |  00m00s
+[36/62] Installing llhttp-0:9.4.2-1.fc4 100% |   4.8 MiB/s |  98.6 KiB |  00m00s
+[37/62] Installing libgit2_1.9-0:1.9.4- 100% |  26.8 MiB/s |   1.4 MiB |  00m00s
+[38/62] Installing systemd-shared-0:261 100% |  40.1 MiB/s |   6.0 MiB |  00m00s
+[39/62] Installing libseccomp-0:2.6.0-3 100% |  10.5 MiB/s | 226.7 KiB |  00m00s
+[40/62] Installing kmod-libs-0:34.2-5.f 100% |   7.0 MiB/s | 144.2 KiB |  00m00s
+[41/62] Installing less-0:704-2.fc45.x8 100% |   3.0 MiB/s | 487.3 KiB |  00m00s
+[42/62] Installing expat-0:2.8.1-1.fc45 100% |   2.1 MiB/s | 329.5 KiB |  00m00s
+[43/62] Installing make-1:4.4.1-12.fc44 100% |   8.6 MiB/s |   1.8 MiB |  00m00s
+[44/62] Installing gcc-0:16.1.1-4.fc45. 100% |  44.4 MiB/s | 121.8 MiB |  00m03s
+[45/62] Installing rust-0:1.97.0-1.fc45 100% |  44.0 MiB/s |  94.7 MiB |  00m02s
+[46/62] Installing rust-std-static-0:1. 100% |  52.7 MiB/s | 165.3 MiB |  00m03s
+[47/62] Installing sgml-common-0:0.6.3- 100% |   1.1 MiB/s | 174.9 KiB |  00m00s
+[48/62] Installing docbook-dtds-0:1.0-9 100% |   3.4 MiB/s |   6.8 MiB |  00m02s
+[49/62] Installing docbook-style-xsl-0: 100% |  14.6 MiB/s |  14.9 MiB |  00m01s
+[50/62] Installing cargo-0:1.97.0-1.fc4 100% |  35.8 MiB/s |  23.7 MiB |  00m01s
+[51/62] Installing annobin-plugin-gcc-0 100% |   6.0 MiB/s | 710.5 KiB |  00m00s
+[52/62] Installing gcc-plugin-annobin-0 100% | 496.0 KiB/s |  58.5 KiB |  00m00s
+[53/62] Installing git-core-0:2.55.0-1. 100% |  37.2 MiB/s |  25.6 MiB |  00m01s
+[54/62] Installing kmod-devel-0:34.2-5. 100% | 101.4 KiB/s |  45.2 KiB |  00m00s
+>>> Running sysusers scriptlet: systemd-0:261.1-2.fc45.x86_64
+>>> Finished sysusers scriptlet: systemd-0:261.1-2.fc45.x86_64
+>>> Scriptlet output:
+>>> Creating group 'empower' with GID 999.
+>>>
+>>> Running sysusers scriptlet: systemd-0:261.1-2.fc45.x86_64
+>>> Finished sysusers scriptlet: systemd-0:261.1-2.fc45.x86_64
+>>> Scriptlet output:
+>>> Creating group 'systemd-journal' with GID 190.
+>>>
+>>> Running sysusers scriptlet: systemd-0:261.1-2.fc45.x86_64
+>>> Finished sysusers scriptlet: systemd-0:261.1-2.fc45.x86_64
+>>> Scriptlet output:
+>>> Creating group 'systemd-imds' with GID 998.
+>>> Creating user 'systemd-imds' (systemd Instance Metadata) with UID 998 and GID 998.
+>>>
+>>> Running sysusers scriptlet: systemd-0:261.1-2.fc45.x86_64
+>>> Finished sysusers scriptlet: systemd-0:261.1-2.fc45.x86_64
+>>> Scriptlet output:
+>>> Creating group 'systemd-oom' with GID 997.
+>>> Creating user 'systemd-oom' (systemd Userspace OOM Killer) with UID 997 and GID 997.
+>>>
+[55/62] Installing systemd-0:261.1-2.fc 100% |   9.0 MiB/s |  14.4 MiB |  00m02s
+[56/62] Installing rubygem-asciidoctor- 100% |   4.7 MiB/s |   1.0 MiB |  00m00s
+[57/62] Installing authselect-0:1.7.1-1 100% |   1.1 MiB/s | 207.9 KiB |  00m00s
+[58/62] Installing pam-0:1.7.2-3.fc45.x 100% |   5.2 MiB/s |   1.7 MiB |  00m00s
+[59/62] Installing systemd-rpm-macros-0 100% | 168.3 KiB/s |   8.9 KiB |  00m00s
+[60/62] Installing openssl-devel-1:4.0. 100% |   2.8 MiB/s |   5.6 MiB |  00m02s
+[61/62] Installing libxslt-0:1.1.43-7.f 100% |   2.8 MiB/s | 474.9 KiB |  00m00s
+[62/62] Installing bash-completion-1:2. 100% | 720.5 KiB/s |   1.6 MiB |  00m02s
+Complete!
+Note: in a future version of systemd-nspawn the default set of permitted socket address families will be restricted to AF_INET, AF_INET6 and AF_UNIX. Use --restrict-address-families= to configure the set of permitted socket address families, or set RestrictAddressFamilies= in a .nspawn file.
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1781654400
+Wrote: /builddir/build/SRPMS/dracut-109-5.20260713.fc45.src.rpm
+Note: in a future version of systemd-nspawn the default set of permitted socket address families will be restricted to AF_INET, AF_INET6 and AF_UNIX. Use --restrict-address-families= to configure the set of permitted socket address families, or set RestrictAddressFamilies= in a .nspawn file.
+Updating and loading repositories:
+ fedora                                 100% |  16.8 KiB/s |  11.5 KiB |  00m01s
+Repositories loaded.
+Package "rubygem-asciidoctor-2.0.26-2.fc44.noarch" is already installed.
+Package "bash-5.3.15-1.fc45.x86_64" is already installed.
+Package "bash-completion-1:2.17-2.fc44.noarch" is already installed.
+Package "cargo-1.97.0-1.fc45.x86_64" is already installed.
+Package "docbook-dtds-1.0-91.fc44.noarch" is already installed.
+Package "docbook-style-xsl-1.79.2-27.fc44.noarch" is already installed.
+Package "gcc-16.1.1-4.fc45.x86_64" is already installed.
+Package "git-core-2.55.0-1.fc45.x86_64" is already installed.
+Package "libxslt-1.1.43-7.fc45.x86_64" is already installed.
+Package "openssl-devel-1:4.0.1-3.fc45.x86_64" is already installed.
+Package "pkgconf-pkg-config-2.5.1-1.fc45.x86_64" is already installed.
+Package "kmod-devel-34.2-5.fc45.x86_64" is already installed.
+Package "systemd-261.1-2.fc45.x86_64" is already installed.
+
+Nothing to do.
+Finish: build setup for dracut-109-5.20260713.fc45.src.rpm
+Start: rpmbuild dracut-109-5.20260713.fc45.src.rpm
+Start: Outputting list of installed packages
+Finish: Outputting list of installed packages
+Note: in a future version of systemd-nspawn the default set of permitted socket address families will be restricted to AF_INET, AF_INET6 and AF_UNIX. Use --restrict-address-families= to configure the set of permitted socket address families, or set RestrictAddressFamilies= in a .nspawn file.
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1781654400
+Executing(mkbuilddir): /bin/sh -e /var/tmp/rpm-tmp.KqF1Jz
+Creating(rpmbuild.env): /builddir/build/BUILD/dracut-109-build/rpmbuild.env
+  RPM_SOURCE_DIR="/builddir/build/SOURCES"
+  RPM_BUILD_DIR="/builddir/build/BUILD/dracut-109-build"
+  RPM_OPT_FLAGS="-O2 -flto=auto -ffat-lto-objects -fexceptions -g -grecord-gcc-switches -pipe -Wall -Wno-complain-wrong-lang -Werror=format-security -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -Wp,-D_GLIBCXX_ASSERTIONS -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -fstack-protector-strong -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"
+  RPM_LD_FLAGS="-Wl,-z,relro -Wl,--as-needed  -Wl,-z,pack-relative-relocs -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -specs=/usr/lib/rpm/redhat/redhat-hardened-ld-errors -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1  -Wl,--build-id=sha1 -specs=/usr/lib/rpm/redhat/redhat-package-notes  "
+  RPM_ARCH="x86_64"
+  RPM_OS="linux"
+  RPM_BUILD_NCPUS="4"
+  RPM_SPECPARTS_DIR="/builddir/build/BUILD/dracut-109-build/SPECPARTS"
+  export RPM_SOURCE_DIR RPM_BUILD_DIR RPM_OPT_FLAGS RPM_ARCH RPM_OS RPM_BUILD_NCPUS RPM_SPECPARTS_DIR RPM_LD_FLAGS
+  RPM_DOC_DIR="/usr/share/doc"
+  export RPM_DOC_DIR
+  RPM_PACKAGE_NAME="dracut"
+  RPM_PACKAGE_VERSION="109"
+  RPM_PACKAGE_RELEASE="5.20260713.fc45"
+  export RPM_PACKAGE_NAME RPM_PACKAGE_VERSION RPM_PACKAGE_RELEASE
+  LANG=C.UTF-8
+  export LANG
+  unset CDPATH DISPLAY ||:
+  unset DEBUGINFOD_URLS ||:
+  unset RPM_CONFIG_DIR ||:
+  RPM_BUILD_ROOT="/builddir/build/BUILD/dracut-109-build/BUILDROOT"
+  export RPM_BUILD_ROOT
+
+  PKG_CONFIG_PATH="${PKG_CONFIG_PATH}:/usr/lib64/pkgconfig:/usr/share/pkgconfig"
+  export PKG_CONFIG_PATH
+  CONFIG_SITE=${CONFIG_SITE:-NONE}
+  export CONFIG_SITE
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.DuKU4U
++ umask 022
++ cd /builddir/build/BUILD/dracut-109-build
++ cd /builddir/build/BUILD/dracut-109-build
++ rm -rf dracut-ng-109
++ /usr/bin/rpmuncompress -x /builddir/build/SOURCES/109.tar.gz
++ STATUS=0
++ '[' 0 -ne 0 ']'
++ cd dracut-ng-109
+/var/tmp/rpm-tmp.DuKU4U: line 15: cd: dracut-ng-109: No such file or directory
+error: Bad exit status from /var/tmp/rpm-tmp.DuKU4U (%prep)
+
+RPM build errors:
+    Bad exit status from /var/tmp/rpm-tmp.DuKU4U (%prep)
+Finish: rpmbuild dracut-109-5.20260713.fc45.src.rpm
+Finish: build phase for dracut-109-5.20260713.fc45.src.rpm
+ERROR: Exception(dracut-109-5.20260713.fc45.src.rpm) Config(fedora-rawhide-x86_64) 1 minutes 19 seconds
+INFO: Results and/or logs in: ./result
+ERROR: Command failed:
+ # /usr/bin/systemd-nspawn -q -M 80d1854d37f4426e8b58980e52123216 -D /var/lib/mock/fedora-rawhide-x86_64/root -a -u mockbuild --capability=cap_ipc_lock --bind=/tmp/mock-resolv.y0b7nchh:/etc/resolv.conf --bind=/dev/btrfs-control --bind=/dev/mapper/control --bind=/dev/fuse --bind=/dev/loop-control --bind=/dev/loop0 --bind=/dev/loop1 --bind=/dev/loop2 --bind=/dev/loop3 --bind=/dev/loop4 --bind=/dev/loop5 --bind=/dev/loop6 --bind=/dev/loop7 --bind=/dev/loop8 --bind=/dev/loop9 --bind=/dev/loop10 --bind=/dev/loop11 --console=pipe --setenv=TERM=vt100 --setenv=SHELL=/bin/bash --setenv=HOME=/builddir --setenv=HOSTNAME=mock --setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin '--setenv=PROMPT_COMMAND=printf "\033]0;<mock-chroot>\007"' '--setenv=PS1=<mock-chroot> \s-\v\$ ' --setenv=LANG=C.UTF-8 --setenv=http_proxy=http://localhost:3128 --resolv-conf=off bash --login -c '/usr/bin/rpmbuild -bb --noclean --target x86_64 --nodeps /builddir/build/SPECS/dracut.spec'
+

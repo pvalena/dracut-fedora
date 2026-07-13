@@ -8,7 +8,7 @@
 
 Name: dracut
 Version: 109
-Release: 5%{?dist}
+Release: 5.20260713%{?dist}
 
 Summary: Initramfs generator using udev
 
@@ -22,6 +22,48 @@ URL: https://github.com/dracut-ng/dracut-ng/wiki/
 Source0: https://github.com/dracut-ng/dracut-ng/archive/refs/tags/%{version}.tar.gz
 
 Source1: https://www.gnu.org/licenses/lgpl-2.1.txt
+# revert: "fix(install.d): correctly install pre-genned image and die if no args"
+# Author: Pavel Valena <pvalena@redhat.com>
+Patch0001:0001-revert-fix-install.d-correctly-install-pre-genned-im.patch
+# feat(kernel-install): do nothing when $KERNEL_INSTALL_INITRD_GENERATOR says so
+# Author: Zbigniew Jędrzejewski-Szmek <zbyszek@in.waw.pl>
+Patch0002:0002-feat-kernel-install-do-nothing-when-KERNEL_INSTALL_I.patch
+# fix(kernel-install): do not generate an initrd when one was specified
+# Author: Zbigniew Jędrzejewski-Szmek <zbyszek@in.waw.pl>
+Patch0003:0003-fix-kernel-install-do-not-generate-an-initrd-when-on.patch
+# revert: "fix(rescue): make rescue always no-hostonly"
+# Author: Pavel Valena <pvalena@redhat.com>
+Patch0004:0004-revert-fix-rescue-make-rescue-always-no-hostonly.patch
+# feat: add openssl module
+# Author: Pavel Valena <pvalena@redhat.com>
+Patch0005:0005-feat-add-openssl-module.patch
+# fix(ossl): ignore compiler warnings
+# Author: Pavel Valena <pvalena@redhat.com>
+Patch0006:0006-fix-ossl-ignore-compiler-warnings.patch
+# Revert "feat(fips): include openssl's fips.so and openssl.cnf"
+# Author: Pavel Valena <pvalena@redhat.com>
+Patch0007:0007-Revert-feat-fips-include-openssl-s-fips.so-and-opens.patch
+# fix(systemd-cryptsetup): load libcryptsetup via dlopen
+# Author: Antonio Alvarez Feijoo <antonio.feijoo@suse.com>
+Patch0008:0008-fix-systemd-cryptsetup-load-libcryptsetup-via-dlopen.patch
+# feat(systemd-sysext): include systemd-{sys,conf}ext-sysroot services
+# Author: Vitaly Kuznetsov <vkuznets@redhat.com>
+Patch0009:0009-feat-systemd-sysext-include-systemd-sys-conf-ext-sys.patch
+# fix(network-legacy): remove network-legacy completely from the codebase
+# Author: Pavel Valena <pvalena@redhat.com>
+Patch0010:0010-fix-network-legacy-remove-network-legacy-completely-.patch
+# fix(iscsi): replace `echo` writes with `printf` to prevent variable injection
+# Author: Pavel Valena <pvalena@redhat.com>
+Patch0011:0011-fix-iscsi-replace-echo-writes-with-printf-to-prevent.patch
+# fix(base): escape arguments in initqueue hook script generation
+# Author: Pavel Valena <pvalena@redhat.com>
+Patch0012:0012-fix-base-escape-arguments-in-initqueue-hook-script-g.patch
+# fix(net-lib): warn on suspicious shell metacharacters in hostname file
+# Author: Pavel Valena <pvalena@redhat.com>
+Patch0013:0013-fix-net-lib-warn-on-suspicious-shell-metacharacters-.patch
+# fix(systemd-networkd): escape DHCP lease values in dhcpopts generation
+# Author: Pavel Valena <pvalena@redhat.com>
+Patch0014:0014-fix-systemd-networkd-escape-DHCP-lease-values-in-dhc.patch
 
 # Please use source-git to work with this spec file:
 # HowTo: https://packit.dev/source-git/work-with-source-git
